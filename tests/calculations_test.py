@@ -4,7 +4,6 @@ import os
 
 # Installed Modules
 import pytest
-
 # Project Modules
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 from calculations import area_of_circle, get_nth_fibonacci   # noqa: E402
@@ -14,7 +13,6 @@ def test_area_of_circle_positive_radius():
     """Test with a positive radius."""
     # Arrange
     radius = 1
-
     # Act
     result = area_of_circle(radius)
 
